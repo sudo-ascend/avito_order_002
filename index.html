@@ -13,6 +13,7 @@
   <meta name="theme-color" content="#f5f4ef">
   <meta name="application-name" content="Система стиля">
   <meta http-equiv="content-language" content="ru-RU">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <link rel="canonical" href="https://system-style.ru/">
   <link rel="alternate" hreflang="ru-RU" href="https://system-style.ru/">
@@ -445,7 +446,7 @@
 
     <section class="section-spacer" id="contact">
       <div class="container">
-        <div class="contact-shell">
+        <div class="contact-shell" data-contact-email="dima_klopov@mail.ru">
           <div class="row g-4 align-items-start">
             <div class="col-lg-5 reveal contact-column contact-column--summary">
               <div class="contact-intro">
@@ -459,7 +460,11 @@
               <div class="contact-card">
                 <div class="contact-actions">
                   <a class="btn btn-brand btn-lg-custom" href="tel:+79647729033">Позвонить</a>
-                  <a class="btn btn-ghost btn-lg-custom" href="mailto:dima_klopov@mail.ru">Написать на почту</a>
+                  <a class="btn btn-ghost btn-lg-custom" href="mailto:dima_klopov@mail.ru" data-contact-email-link>Написать на почту</a>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-item__label">Email</span>
+                  <a href="mailto:dima_klopov@mail.ru" data-contact-email-link data-contact-email-text>dima_klopov@mail.ru</a>
                 </div>
                 <div class="contact-item">
                   <span class="contact-item__label">Адрес</span>
@@ -480,9 +485,9 @@
                     <span class="connect-card__label">Телефон</span>
                     <strong>8 964 772-90-33</strong>
                   </a>
-                  <a class="connect-card" href="mailto:dima_klopov@mail.ru">
+                  <a class="connect-card" href="mailto:dima_klopov@mail.ru" data-contact-email-link>
                     <span class="connect-card__label">Почта</span>
-                    <strong>dima_klopov@mail.ru</strong>
+                    <strong data-contact-email-text>dima_klopov@mail.ru</strong>
                   </a>
                 </div>
                 <div class="contact-connect__note">

@@ -44,6 +44,18 @@ document.addEventListener("DOMContentLoaded", () => {
     revealElements.forEach((item) => item.classList.add("is-visible"));
   }
 
+  const contactShell = document.querySelector("[data-contact-email]");
+  const contactEmail = contactShell?.dataset.contactEmail?.trim();
+  if (contactEmail) {
+    document.querySelectorAll("[data-contact-email-link]").forEach((link) => {
+      link.setAttribute("href", `mailto:${contactEmail}`);
+    });
+
+    document.querySelectorAll("[data-contact-email-text]").forEach((node) => {
+      node.textContent = contactEmail;
+    });
+  }
+
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", (event) => {
       const targetId = anchor.getAttribute("href");
