@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://system-style.ru/sitemap.xml
+Host: system-style.ru
